@@ -214,7 +214,7 @@ footer p{ font-size: 0.8rem }
     .reviews .review{
         display: flex;
         width: 414px;
-        height: 212px;
+        height: 227px;
         gap: 20px;
     }
 
@@ -224,6 +224,7 @@ footer p{ font-size: 0.8rem }
     }
 
     .review .center-p{ 
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
         width: 500px;

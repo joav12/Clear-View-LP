@@ -18,7 +18,49 @@ window.addEventListener("scroll", () => {
     }
 })
 
-// Conexão com a API
+// res.setHeader("Access-Control-Allow-Origin", "*");
+
+// Conexão com a api
+function pegaAPI(url){
+    let request = new XMLHttpRequest()
+
+    request.open("GET", url, false)
+
+    request.send()
+
+    return request.responseText
+}
+
+data = pegaAPI(`https://reviews-clear-view.onrender.com/api/v1/reviews`)
+const dataToJson = JSON.parse(data)
+const reviews = dataToJson.reviews.data
+
+console.log(reviews)
+
+const reviews_container = document.getElementById('reviews-container');
+reviews.forEach(reviews => {
+    reviews_container.innerHTML += `<div class="review">
+    <div>
+        <img src="/img/icone.png" alt="icone">
+
+        <h4>${reviews.nome}</h4>
+
+        <div class="estrelas">
+            <img src="/img/estrela.png" alt="estrela">
+            <img src="/img/estrela.png" alt="estrela">
+            <img src="/img/estrela.png" alt="estrela">
+            <img src="/img/estrela.png" alt="estrela">
+            <img src="/img/estrela.png" alt="estrela">
+        </div> 
+    </div>
+    
+
+    <div class="center-p">
+        <p>${reviews.texto}</p>   
+    </div>
+</div>`
+});
+
 
 
 
