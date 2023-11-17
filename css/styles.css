@@ -1,0 +1,127 @@
+*{ padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+/* Home */
+.home{
+    color: #fff;
+    background-color: #46105B;
+    display: flex;
+    padding: 20px;
+}
+
+.home img{
+    width: 122px;
+    height: 125px;
+    margin-right: 15px;
+}
+
+.home h1{ font-size: 2.0rem; }
+
+.home h2{ font-size: 0.6rem; }
+
+.home .home-titulo-subtitulo{ margin-top: 34px; }
+
+/* Sobre nós */
+.fundo-titulo{
+    color: #fff;
+    background: linear-gradient(0deg, #94C2CC 0%, #46105B 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-nos .textos{
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.sobre-nos .textos img{
+    width: 182px;
+    height: 246px;
+}
+
+.sobre-nos .texto-fundos{
+    background-color: #94C2CC;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reviews */
+.reviews{
+    color: #fff;
+    background-color: #46105B;
+    padding: 20px;
+    text-align: center;
+}
+
+.reviews p{ margin-bottom: 15px; }
+
+.reviews .review{
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.reviews .review img{
+    width: 110px;
+    height: 110px;
+}
+
+.reviews .review h4{
+    margin: 10px 0px;
+}
+
+.reviews .review .estrelas img{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+/* formuláro */
+.form{
+    background-color: #94C2CC;
+    padding: 20px;
+}
+
+.form .titulo-form{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form .email p, .form .numero p{ margin-bottom: 5px; }
+
+.form .email input, .form .numero input{ margin-bottom: 10px; }
+
+.form .numero input{
+    width: 110px;
+}
+
+.form .butao-div{
+    display: flex;
+    justify-content: center;
+}
+
+.form button{ padding: 5px; }
+
+/* Footer */
+footer{
+    padding: 20px;
+    color: #7D7D7D;
+    background-color: #270037;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logos{ margin-bottom: 10px; margin-top: 40px;}
+
+footer .logos img{
+    width: 50px;
+    height: 20px;
+}
+
+footer p{ font-size: 0.8rem }
