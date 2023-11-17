@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
     <title>Clear view</title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <a href="#"><img src="/img/logo.png" alt="Logo"></a>
+
+        <nav>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
     <!-- Home -->
     <div class="img-fundo-desk">
         <div class="home">
@@ -19,81 +39,118 @@
     </div>
 
     <!-- Sobre nós -->
-    <div class="sobre-nos">
+    <div class="sobre-nos" id="sobre">
         <div class="fundo-titulo">
             <h2>sobre nós</h2>
         </div>
 
         <div class="textos">
-            <img src="/img/doutor-texto1.png" alt="doutor">
-            <div class="texto-fundos">
+            <img src="/img/doutor-texto1.png" alt="doutor" class="BR-esquerda">
+            <div class="texto-fundos BR-direita">
                 <p>Nós somos uma empresa que visa utilizar a técnologia para facílitar a vida daqueles que, diariamente, salvam diversas vidas  </p>
             </div>
         </div>
 
         <div class="textos">
-            <div class="texto-fundos">
+            <div class="texto-fundos BR-esquerda">
                 <p>Com nosso sistema que tranforma radiográfia, tomográfia e ressonância magnética em objetos 3D, ajudando na decisão de qual procedimento utilizar no paciente</p>
             </div>
-            <img src="/img/modelo3D.png" alt="doutor">
+            <img src="/img/modelo3D.png" alt="modelo3D" class="BR-direita">
         </div>
     </div>
 
     <!-- Reviews -->
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <p>O que nossos clientes falam de nós</p>
 
-        <div class="review">
-            <img src="/img/icone.png" alt="icone">
-
-            <h4>nome</h4>
-
-            <div class="estrelas">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
+        <div class="review-flex">
+            <div class="review">
+                <div>
+                    <img src="/img/icone.png" alt="icone">
+        
+                    <h4>nome</h4>
+        
+                    <div class="estrelas">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                    </div> 
+                </div>
+                
+    
+                <div class="center-p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>   
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>
-        </div>
-
-        <div class="review">
-            <img src="/img/icone.png" alt="icone">
-
-            <h4>nome</h4>
-
-            <div class="estrelas">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
+            <div class="review">
+                <div>
+                    <img src="/img/icone.png" alt="icone">
+        
+                    <h4>nome</h4>
+        
+                    <div class="estrelas">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                    </div> 
+                </div>
+                
+    
+                <div class="center-p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>   
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>
-        </div>
-
-        <div class="review">
-            <img src="/img/icone.png" alt="icone">
-
-            <h4>nome</h4>
-
-            <div class="estrelas">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
-                <img src="/img/estrela.png" alt="estrela">
+            <div class="review">
+                <div>
+                    <img src="/img/icone.png" alt="icone">
+        
+                    <h4>nome</h4>
+        
+                    <div class="estrelas">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                    </div> 
+                </div>
+                
+                <div class="center-p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>   
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>
+            <div class="review">
+                <div>
+                    <img src="/img/icone.png" alt="icone">
+        
+                    <h4>nome</h4>
+        
+                    <div class="estrelas">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                        <img src="/img/estrela.png" alt="estrela">
+                    </div> 
+                </div>
+                
+    
+                <div class="center-p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque aspernatur quidem qui, unde eum officia temporibus accusantium sint doloremque?</p>   
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- formulário -->
-    <div class="formulario">
+    <div class="formulario" id="contato">
         <div class="fundo-titulo">
             <h2>Nosso contato</h2>
         </div>
@@ -101,20 +158,24 @@
         <div class="form">
             <p class="titulo-form">Preencha o formulário abaixo para entrar em contato conosco</p>
 
-            <div class="email">
-                <p>Seu e-mail</p>
-                <input type="text" id="email">
-            </div>
-
-            <div class="numero">
-                <p>Seu número</p>
-                <input type="number" id="numero">
-            </div>
-
-            <div class="butao-div">
-               <button>Enviar</button> 
-            </div>
-            
+            <div class="form-none">
+                <div>
+                    <div class="email">
+                        <p>Seu e-mail</p>
+                        <input type="text" id="email">
+                    </div>
+    
+                    <div class="numero">
+                        <p>Seu número</p>
+                        <input type="number" id="numero">
+                    </div>  
+                </div>
+                
+    
+                <div class="butao-div">
+                   <button id="butao">Enviar</button> 
+                </div>
+            </div>            
         </div>
 
     </div>

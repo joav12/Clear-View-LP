@@ -1,4 +1,29 @@
-*{ padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+*{ padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; scroll-behavior: smooth;}
+
+/* Header */
+header{
+    background-color: #46105B;
+    display: none;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all ease-in-out 0.2s;
+}
+
+header img{
+    width: 51px;
+    height: 57px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
 
 /* Home */
 .home{
@@ -10,7 +35,7 @@
 
 .home img{
     width: 122px;
-    height: 125px;
+    height: 84px;
     margin-right: 15px;
 }
 
@@ -53,6 +78,10 @@
     background-color: #46105B;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .reviews p{ margin-bottom: 15px; }
@@ -63,6 +92,7 @@
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 25px;
+    width: 300px;
 }
 
 .reviews .review img{
@@ -84,6 +114,10 @@
 .form{
     background-color: #94C2CC;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form .titulo-form{
@@ -120,8 +154,78 @@ footer{
 footer .logos{ margin-bottom: 10px; margin-top: 40px;}
 
 footer .logos img{
-    width: 50px;
-    height: 20px;
+    width: 31px;
+    height: 33px;
 }
 
 footer p{ font-size: 0.8rem }
+
+@media (min-width: 600px){
+    .home{ justify-content: center }
+
+    .home img{ height: 120px; }
+}
+
+@media (min-width: 1050px){
+    .img-fundo-desk{
+        background-image: url('../img/fundo-home-desk.png');
+        background-position: -1211px -17px;
+        height: 598px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home{
+        width: 431px;
+        height: 169px;
+        border-radius: 30px;
+    }
+
+    .home img{ height: 120px; }
+
+    .sobre-nos{ 
+        background-color: #46105B;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nos .fundo-titulo{ background: linear-gradient(180deg, #94C2CC 0%, #46105B 100%); width: 100%;}
+
+    .sobre-nos .textos{
+        width: 420px;
+        margin-top: 20px;
+    }
+
+    .BR-esquerda{ border-radius: 30px 0px 0px 30px; }
+
+    .BR-direita{ border-radius: 0px 30px 30px 0px; }
+
+    .reviews{ display: block; }
+
+    .review-flex{
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .reviews .review{
+        display: flex;
+        width: 414px;
+        height: 212px;
+        gap: 20px;
+    }
+
+    .reviews .review .estrelas img {
+        width: 18px;
+        height: 29px;
+    }
+
+    .review .center-p{ 
+        display: flex;
+        align-items: center;
+        width: 500px;
+    }
+}
